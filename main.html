@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Casamento</title>
+    <style>
+        /* Estilos para o botão */
+        #pedido-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #9c856a;
+            color: white;
+            border: black, ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Casamento</title>
+    <style>
+        /* Estilos para o botão */
+        #pedido-namoro {
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #543f37;
+            color: white;
+            border: black, ;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem em Círculo</title>
+    <style>
+        .imagem-circular {
+            position: absolute;
+            top: 25%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* Estilizando a imagem para ter bordas arredondadas */
+        .imagem-circular {
+            width: 200px; /* Defina o tamanho da imagem */
+            height: 200px;
+            border-radius: 50%; /* Isso faz com que a borda da imagem seja um círculo */
+            overflow: hidden; /* Isso garante que a imagem dentro do círculo não ultrapasse os limites */
+        }
+
+        /* Ajustando a imagem para se encaixar perfeitamente no círculo */
+        .imagem-circular img {
+            width: 100%; /* Garante que a imagem se ajuste completamente ao círculo */
+            height: auto; /* Mantém a proporção da imagem */
+            display: block; /* Remove quaisquer espaços em branco extras */
+        }
+    </style>
+</head>
+<body>
+    <!-- A div que envolve a imagem -->
+    <div class="imagem-circular">
+        <!-- A imagem que você quer exibir -->
+        <img src="images (1).jpg" alt="Imagem Circular">
+    </div>
+</body>
+</html>
+<body>
+    <!-- Botão de pedido de namoro -->
+    <button id="pedido-namoro">QUER CASAR COMIGO? por: Kauê seu amorzinho ;)</button>
+
+    <button id="pedido-btn">NÃO</a></button> 
+
+    <a href="https://youtu.be/O_vzefyV-4U?si=LrTNpUDLtaHcBvuL&t=2">
+        <button id="pedido-btn">SIM</button>
+    </a>
+    <!-- Script para movimentar o botão aleatoriamente -->
+    <script>
+        const button = document.getElementById('pedido-btn');
+
+        function moveButton() {
+            const randomX = Math.random() * window.innerWidth;
+            const randomY = Math.random() * window.innerHeight;
+            button.style.left = `${randomX}px`;
+            button.style.top = `${randomY}px`;
+        }
+
+        // Movimenta o botão a cada 0.5 segundos
+        setInterval(moveButton, 500);
+    </script>
+</body>
+</html>
+'
+'
